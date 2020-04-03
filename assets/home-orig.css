@@ -1,0 +1,128 @@
+.mdl-navigation .mdl-navigation__link {
+    padding: 0px 14px;
+    font-size: 22px;
+    text-transform: unset;
+}
+.android-navigation {
+    width: 1100px;
+}
+.mdl-menu__item {
+  font-size: 20px;
+}
+.button-m {
+    width: 90px;
+    font-weight: bold;
+    text-transform: unset;
+}
+.btn-give-now {
+  border-radius: 9px;
+}
+
+.mdl-button--raised, .mdl-menu__outline, .mdl-shadow--3dp, .mdl-layout__header {
+  box-shadow: unset !important;
+}
+.android-navigation .mdl-navigation__link:hover {
+    border-bottom: 10px solid #ff9800;
+}
+.text-blue {
+    color: #0a0d6b !important;
+}
+.dbm-submenu li, .dbm-submenu li a {
+    font-weight: bold;
+    color: #0a0d6b !important;
+}
+.mdl-menu {
+  background: #f7f7f7;
+}
+.position-unset {
+  position: unset !important;
+}
+.orig-hide {
+  display: none;
+}
+/*.slides > div {
+  background-color: #FFC107;
+}*/
+.bg-yellow {
+  background-color: #FFC107;
+}
+.white-give-now {
+  background: #fff;
+    border-radius: 7px;
+    margin: 0 25%;
+    padding: 5px 17px;
+    text-transform: unset;
+    font-size: 19px;
+}
+.white-give-now i {
+  display: none;
+}
+.yellow-dark-background .slides::-webkit-scrollbar-thumb {
+    background: #ffc107;
+    border-radius: 0px;
+}
+.orig-text-blue {
+  color: #2e3181 !important;
+}
+.btn-view-all {
+  background-color: #ffc107 !important;
+  font-size: 23px;
+    width: 120px;
+    line-height: 1.5;
+}
+.white-give-now:hover {
+  background: #fff;
+    border-radius: 7px;
+    margin: 0 25%;
+    padding: 5px 17px;
+    text-transform: unset;
+    font-size: 19px;
+}
+.title-con {
+  margin-top: -175px;
+    background: #2e3181ba;
+    color: #fff !important;
+    z-index: 1;
+}
+.mdl-card__title {
+  z-index: 2;
+}
+.mdl-card__media-orig {
+  height: 250px;
+}
+.mdl-card__title-text {
+  font-size: 20px;
+}
+.about-us-title {
+  font-size: 20px;
+    text-transform: uppercase;
+}
+.about-us-desc {
+  font-size: 16px;
+}
+.yellow-dark-background .slides > div {
+  background-color: #FFC107;
+}
+.orig-ourmission-pic {
+  margin: 0px;
+    height: 370px;
+}
+.orig-normal-bg {
+  background-color: #fff !important;
+}
+.orig-normal-bg h4 {
+  color: #000 !important;
+  font-size: 14px;
+    font-weight: 500 !important;
+}
+.orig-ourmission-img {
+  height: 150px;
+}
+.orig-ourmission-text{
+font-size: 11px;
+    line-height: unset
+
+}
+.orig-outmission-box-shadow {
+  box-shadow: #e3e3e3 6px 5px 4px 0px !important;
+}
