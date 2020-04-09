@@ -37,6 +37,8 @@ $(function(){
 
 	});
 
+ 
+
 	//Main table
 	var dtTable = $('#table').DataTable( {
 	    "processing": true,
