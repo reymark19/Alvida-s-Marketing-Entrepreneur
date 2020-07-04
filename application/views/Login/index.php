@@ -70,14 +70,14 @@
     <div id="login-conatiner" class="mdl-card mdl-shadow--16dp">
         <div class="mdl-card__supporting-text">
             <div id="card-heading">
-                User Login
+            <img class="android-logo-image" src="<?php echo base_url() ?>images/smx_logo.jpg">
             </div>
             <br>
             <span style="color: red;"><?php echo @$message ?></span>
             <form action="<?php echo base_url() ?>Auth/Login" method="POST">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <input class="mdl-textfield__input" id="username" name="username" pattern="[A-Z,a-z,0-9]*" minlength="5"/>
-                <label class="mdl-textfield__label" for="username">username</label>
+                <label class="mdl-textfield__label" for="username">Username</label>
             </div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <input class="mdl-textfield__input" type="password" id="password" name="password"  pattern="[A-Z,a-z,0-9]*" minlength="5"/>

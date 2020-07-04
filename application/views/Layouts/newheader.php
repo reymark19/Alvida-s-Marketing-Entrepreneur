@@ -25,11 +25,11 @@
     <?php else: ?>
       <meta name="google-signin-client_id" content="224453956104-9irgaq75sj9ukgfjltbek81mk6mue7kk.apps.googleusercontent.com">
     <?php endif ?>
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="<?php echo base_url(); ?>/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>images/nsmxlogo.jpg" type="image/x-icon">
+    <link rel="icon" href="<?php echo base_url(); ?>/images/nsmxlogo.jpg" type="image/x-icon">
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="<?php echo base_url(); ?>/images/favicon.ico">
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>images/favicon.ico">
+    <link rel="icon" sizes="192x192" href="<?php echo base_url(); ?>/images/nsmxlogo.jpg">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>images/nsmxlogo.jpg">
 
     <!-- Page styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">

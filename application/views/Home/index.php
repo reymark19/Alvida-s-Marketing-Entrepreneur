@@ -1,177 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Systemax Marketing Global Corp.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
 
-      <div class="android-content mdl-layout__content">
-        <a></a>
-        <div class="carousel-container">
-        	<?php foreach ($banners as $banner): ?>
-		        <div class="banner android-be-together-section mdl-typography--text-left" style="background: url('<?php echo $banner["Path"] ?>') center 30% no-repeat;background-size: cover;">
-		          <div class="logo-font android-slogan"><span><?php echo $banner["BannerName"] ?></span></div>
-		          <?php if ($banner["Description"] != "" && $banner["Description"] != " " && $banner["Description"] != null): ?>
-		          <div class="logo-font android-sub-slogan"><span><?php echo $banner["Description"] ?></span></div>
-		          <?php endif ?>
-		          <br>
-		          <br>
-		          <?php if ($banner["ActionId"] == 1): ?>
-		          	<a href="#!" style="margin-left: 15px;" target="_blank" class="button-l mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast btn-give-now">Give Now</a>
-		          <?php endif ?>
-		          
-		        </div>
-	        <?php endforeach ?>
+
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>images/nsmxlogo.jpg" type="image/x-icon">
+    <link rel="icon" href="<?php echo base_url(); ?>/images/nsmxlogo.jpg" type="image/x-icon">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="<?php echo base_url(); ?>/images/nsmxlogo.jpg">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>images/nsmxlogo.jpg">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+
+    <link rel="stylesheet" href="<?php echo base_url('assets/newassets/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/newassets/css/jquery.fancybox.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/newassets/css/owl.carousel.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/newassets/css/owl.theme.default.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/newassets/css/aos.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/newassets/fonts/flaticon/font/flaticon.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/newassets/css/newmain.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/newassets/css/style.css') ?>">
+ 
+    
+    <title>Alvida's Marketing Global Corp. </title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+  </head>
+
+   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
         </div>
-        
-        
+        <div class="site-mobile-menu-body"></div>
+      </div>
 
-		<div class="separator"></div>
 
-        <div class="android-screen-section mdl-typography--text-center no-padding-bottom">
-          <div class="mdl-typography--font-light mdl-typography--display-3 bolder">Youth. Our <span class="text-dark-yellow">Mission</span>. Our Passion.</div>
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <a href="#" class=""><span class="mr-2  icon-map-marker"></span> <span class="d-none d-md-inline-block">Cebu City, Philippines</span></a>   
+              <span class="mx-md-2 d-inline-block"></span>
+              <a href="#" class=""><span class="mr-2  icon-envelope-open-o"></span> <span class="d-none d-md-inline-block">alvidasmarketing@gmail.com</span></a>
+              <span class="mx-md-2 d-inline-block"></span>
+              <a href="#" class=""><span class="mr-2  icon-phone"></span> <span class="d-none d-md-inline-block">(+63) 932 9198 926</span></a>
 
-			<div class="mdl-grid">
-				<div class="mdl-cell mdl-cell--2-col"></div>
-				<div class="mdl-cell mdl-cell--8-col">
-					<p class="mdl-typography--headline mdl-typography">
-		                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		          </p>
-				</div>
-				<div class="mdl-cell mdl-cell--2-col"></div>
-			</div>
+
+              <div class="float-right">
+
+                <a href="#" class=""><span class="mr-2  icon-android"></span> <span class="d-none d-md-inline-block">Android</span></a>
+                <span class="mx-md-2 d-inline-block"></span>
+                <a href="#" class=""><span class="mr-2  icon-message"></span> <span class="d-none d-md-inline-block">Messenger</span></a>
+                <span class="mx-md-2 d-inline-block"></span>
+                <a href="https://web.facebook.com/Smxmarketing-Ph-111967673725986/?ref=bookmarks" class=""><span class="mr-2  icon-facebook"></span> <span class="d-none d-md-inline-block">Facebook</span></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
+      </div>
 
-        <div class="android-more-section no-padding">
-          <div class="android-card-container mdl-grid">
+      <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
-          	<?php foreach ($missions as $mission): ?>
-          		<div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-	              <div class="mdl-card__media mdl-card__media-orig">
-	                <img src="<?php echo $mission['Path'] ?>">
-	              </div>
-	              <div class="mdl-card__title">
-	                 <h4 class="mdl-card__title-text bold"><?php echo $mission['MissionName'] ?></h4>
-	              </div>
-	              <div class="mdl-card__supporting-text orig-hide title-con">
-	                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
-	              </div>
-	              <div class="mdl-card__actions orig-hide">
-	                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase text-blue" href="<?php echo base_url() ?>OurMission#<?php echo str_replace(' ', '', $mission['MissionName']); ?>">
-	                   Learn More
-	                   <i class="material-icons">chevron_right</i>
-	                 </a>
-	              </div>
-	            </div>
-          	<?php endforeach ?>
-            
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+
+            <div class="site-logo">
+               <img class="android-logo-image" height="60" width="280"  src="images/smxlogo1.jpg" alt="Image">
+                 </div>
+
+            <div class="col-12">
+              <nav class="site-navigation text-right ml-auto " role="navigation">
+
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  <li><a href="#home-section" class="nav-link">HOME</a></li>
+                  <li><a href="#pricing-section" class="nav-link">PRODUCTS</a></li>
+
+
+                  <li >
+                    <a href="#about-section" class="nav-link">ABOUT US</a>
+                   </li> 
+                    <li> <a href="#faq-section" class="nav-link">FAQ</a></li>
+                       
+                   
+ 
+                  <li><a href="#contact-section" class="nav-link">CONTACT</a></li>
+                  <li><a href="https://www.smxmarketing.com/login" class="nav-link">MEMBER LOGIN</a></li>
+                </ul>
+              </nav>
+
+            </div>
+
+            <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
 
           </div>
         </div>
 
-		<div class="separator"></div>
-        <video width="100%" src="<?php echo base_url() ?>upload/SDBVocationPromotion.mp4" muted autoplay></video>
+      </header>
 
-        <div class="android-more-section no-padding no-max-width yellow-dark-background">
-        	<div class="slider">
-			  <div class="slides">
-			  	<?php $swipeCnt = 0; for ($i=1; $i <= ceil(count($campaigns)/4); $i++) { 
-	        		$missionCnt = 0;
-	        		$swipeCnt++;
-
-	        		?>
-	        		<div id="slide6-<?php echo $i; ?>"  class="android-card-container mdl-grid">
-		          	<?php foreach ($campaigns as $mission): ?>
-		          		<?php 
-		          			$missionCnt++;
-		          			if (ceil($missionCnt/4) == $i) {
-		          		 ?>
-		          		<div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--3dp">
-			              <div class="mdl-card__media">
-			                <img src="<?php echo $mission['Path'] ?>">
-			              </div>
-			              <div class="mdl-card__title orig-hide">
-			                 <h4 class="mdl-card__title-text bold"><?php echo $mission['CampaignName'] ?></h4>
-			              </div>
-			              <div class="mdl-card__supporting-text text-left orig-hide">
-			                <span class="mdl-typography--font-light mdl-typography--subhead card-overflow-50"><?php echo $mission['Description'] ?></span>
-			              </div>
-			              <div class="mdl-card__actions text-left position-unset bg-yellow">
-			                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase text-blue white-give-now" href="<?php echo base_url() ?>Give">
-			                   Give Now
-			                   <i class="material-icons">chevron_right</i>
-			                 </a>
-			              </div>
-			            </div>
-			            <?php } ?>
-		          	<?php endforeach ?>
-		          	</div>
-	        	<?php } ?>
-			  </div>
-				<?php $swipeCnt = 0; for ($i=1; $i <= ceil(count($campaigns)/4); $i++) { 
-				$missionCnt = 0;
-				$swipeCnt++;
-				$isactive = 'is-active';
-					if ($i != 1) {
-						$isactive = '';
-					}
-				?>
-				<a href="#slide6-<?php echo $i; ?>" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect no-min-width mdl-button--accent" style="background-color: #2e3181">
-				  <?php echo $i ?>
-				</a>
-				<?php } ?>
-			  <a href="#slider" class=""></a>
-			  <br><br>
-			</div>
-	    </div>
+      <div class="ftco-blocks-cover-1">
+        <div id="banner"  >
+         <div class="inner">   
+              <h1>Start your business now.</h1>
+              <p>Our own flagship package and a unique marketing system is the only one of a kind, helping you turn your passion by giving you all the skills in MLM. By helping you build your network and creating your unique selling proposition to maximize your chance of success. </p>
+               <form action="https://www.smxmarketing.com/login">
+                  <div class="form-group d-flex">
+                    <input type="submit" class="btn btn-primary text-white px-4"  value="GET STARTED TODAY">
+                  </div>
+              </form>
+            </div>
+        <video autoplay loop muted playsinline src="images/banner.mp4"></video>
+      </div>
+     
 
 
-        <div class="yellow-dark-background text-center">
-        	<a href="<?php echo base_url() ?>OurMission" class="button-m mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast btn-sign-up orig-text-blue btn-view-all">View All</a>
+        <!-- END .ftco-cover-1 -->
+        <div class="ftco-service-image-1 pb-5">
+          <div class="container">
+            <div class="owl-carousel owl-all">
+              <div class="service text-center">
+                <a href="#"><img src="images/What-Are-Affiliate-Programs.jpg" alt="Image" width="200" height="200"></a>
+                <div class="px-md-3">
+                  <h3><a href="#">AFFILIATE PROGRAM</a></h3>
+                  <p>Join Systemax Affiliate program and get rewarded with the highest paying Affiliate program. Joining is fast, easy, and free.</p>
+                </div>
+              </div>
+              <div class="service text-center">
+                <a href="#"><img src="images/radius-network-security.jpg" alt="Image" width="200" height="200"></a>
+                <div class="px-md-3">
+                  <h3><a href="#">REPLICATED WEBSITE</a></h3>
+                  <p>Upon registering with our Affiliate program you’ll get a unique link to share. We’ll track visitors for you when someone clicks on your link and purchases any Systemax product.</p>
+                </div>
+              </div>
+              <div class="service text-center">
+                <a href="#"><img src="images/hand-through-laptop-gbp-bookie-payout.jpg" alt="Image" width="200" height="200"></a>
+                <div class="px-md-3">
+                  <h3><a href="#">POINTS/COMMISSION</a></h3>
+                  <p>Get paid based on referral sales with our five tier rewards plan. Affiliate earnings start out at 30% and go up to 75% on integrated health products. The more people you refer, the higher your payout.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	    <script type="text/javascript">
-	      google.charts.load('current', {
-	        'packages':['geochart'],
-	        // Note: you will need to get a mapsApiKey for your project.
-	        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-	        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
-	      });
-	      google.charts.setOnLoadCallback(drawRegionsMap);
 
-	      function drawRegionsMap() {
-	        var data = google.visualization.arrayToDataTable([
-	          ['Country', 'Houses'],
-	          ['Philippines', 14],
-	          ['Pakistan', 2]
-	        ]);
-	        var options = {
-	        	region: '142',
-		        colorAxis: {colors: ['darkblue', 'darkblue']}
-	        };
+      </div>
 
-	        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+      <!-- <div  id="about-1" style="background-color: #f5fafd;" data-label="About" data-id="about-1" data-export-id="about-1" data-category="about" class="about-1 content-section content-section-spacing">
+<div  class="gridContainer">
+<div  class="row text-center">
+<div  class="section-title-col" data-type="column">
 
-	        chart.draw(data, options);
-	      }
-	    </script>
-	    <div class="mdl-grid">
-		  <div class="mdl-cell mdl-cell--4-col">
-		  	<div class="mdl-typography--font-light mdl-typography--display-3 bolder">Our mission work in <span class="text-blue">16</span> houses</div>
+<h2  class="">Do I have to pay to join HEALPHASE Affiliate program?</h2>
+<p  class="lead">No, it’s absolutely free to become an Affiliate partner. While the Affiliate program is free to join, you can only buy your own package or try any of our products.&nbsp;</p>
+<a  class="button color1" href="https://healphasemarketing.com/login" target="_self" data-cp-link="1">GET STARTED NOW</a>
 
-			<div class="separator"></div>
-		  	<div class="mdl-typography--font-light">
-		  		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		  	</div>
-		  </div>
-		  <div class="mdl-cell mdl-cell--8-col">
-		  	<div id="regions_div" style="width: 100%; height: 500px;"></div>
-		  </div>
-		</div>
-    
+</div>
+</div>
+<div  class="row">
+<div  class="bottom-xs center-xs col-xs flexbox image-group-bottom-3-img"><img  class="left-img shadow-large-black" data-size="500x300" src="https://healphasemarketing.com/home-page/wp-content/uploads/2019/05/cropped-59701821_342044169789306_7889546140373221376_n-1.jpg" alt="" title="cropped-59701821_342044169789306_7889546140373221376_n-1.jpg"> </div>
+</div>
+</div>
+</div> -->
+ <div class="site-section" id="about-section">
 
-<script src="<?php echo base_url() ?>js/Home/index.js"></script>
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center">
+              <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
+                <h2>Do I have to pay to join Alvida's Affiliate program?</h2>
+                <p>No, it’s absolutely free to become an Affiliate partner. While the Affiliate program is free to join, you can only buy your own package plan..&nbsp;</p>
+
+              <img  class="left-img shadow-large-black" data-size="500x300" src="images/photops.jpg" alt="" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      
+      <div class="site-section bg-light" id="pricing-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center text-center">
+            <div class="col-md-7">
+              <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
+                <h2>Choose Your Package Plan</h2>
+                 </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="">
+              <div class="pricing">
+                <h3 class="text-center text-black">Start</h3>
+                <div class="price text-center mb-4 ">
+                  <span><span>&#8369;1,888</span> / lifetime</span>
+                </div>
+                <ul class="list-unstyled ul-check success mb-5">
+                   <li><u>Unlimited</u> income</li>
+                  <li class="remove">Daily Sales Profit Qualifier</li>
+                  <li class="remove">Cashback Rewards</li>
+                  <li class="remove">Instant Payout</li>
+                  <li class="remove">6,000 Maximum Daily Income</li>
+                </ul>
+                <p class="text-center">
+                  <a href="#" class="btn btn-secondary btn-md">Buy Now</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing">
+                <h3 class="text-center text-black">Premium</h3>
+                <div class="price text-center mb-4 ">
+                  <span><span>&#8369;3,888</span> / lifetime</span>
+                </div>
+                <ul class="list-unstyled ul-check success mb-5"> 
+                   <li><u>Unlimited</u> income</li>
+                  <li class="remove">Daily Sales Profit Qualifier</li> 
+                  <li class="remove">Instant Payout</li>
+                  <li class="remove">12,000 Maximum Daily Income</li>
+                </ul>
+                <p class="text-center">
+                  <a href="#" class="btn btn-primary btn-md text-white">Buy Now</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="pricing">
+                <h3 class="text-center text-black">Professional</h3>
+                <div class="price text-center mb-4 ">
+                  <span><span>&#8369;10,888</span> / lifetime</span>
+                </div>
+                <ul class="list-unstyled ul-check success mb-5"> 
+                  <li><u>Unlimited</u> income</li>
+                  <li class="remove">Weekly Sales Profit Qualifier</li> 
+                  <li class="remove">Instant Payout</li>
+                  <li class="remove">18,000 Maximum Daily Income</li>
+                </ul>
+                <p class="text-center">
+                  <a href="#" class="btn btn-secondary btn-md">Buy Now</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="site-section" id="about-section">
+
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center">
+              <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
+                <h2>About Us</h2>
+                <p>Our own flagship package and a unique marketing system is the only one of a kind, helping you turn your passion by giving you all the skills in MLM. By helping you build your network and creating your unique selling proposition to maximize your chance of success.</p>
+                <br>
+                <h4>FOCUS ON YOUR SUCCESS?</h4>
+                <p>
+We will provide you some FREE training motivatin and inspiration to make easier to earn. Our innovative website gives you full access to products, training videos , social media marketing tools, plus support from our top leaders in our mentoring program.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> 
+
+      <div class="site-section bg-light" id="about-section">
+        <div class="container">
+          <div class="row justify-content-center mb-4 block-img-video-1-wrap">
+            <div class="col-md-12 mb-5">
+              <figure class="block-img-video-1" data-aos="fade">
+                <a href="https://vimeo.com/45830194" data-fancybox data-ratio="2">
+                <span class="icon"><span class="icon-play"></span></span>
+                <img src="images/nbanner.png" alt="Image" class="img-fluid">
+              </a>
+              </figure>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+ 
+      <div class="site-section" id="faq-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="block-heading-1 col-12 text-center">
+              <h2>Frequently Ask Questions</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-2"><span class="icon-question_answer text-primary mr-2"></span>What are the benefits of joining Alvida's Affiliate program?</h3>
+                <p>As an Alvida's Affiliate, you’ll receive:</p>
+                <ul>  
+                  <li>
+                   Commissions ranging from 30% up to 75% on any eligible purchases your referred. 
+                  </li>
+                  <li>
+                   Clean, professionally-designed, personalized healphase website, banners and text links to promote.
+                  </li>
+                  <li>
+                   Our Affiliate newsletters, including curated content recommendations and fresh advertising creative.
+                  </li>
+                  <li>
+                   Same discount on products our Members and Social Business Partners receive.
+                  </li>
+                  </ul>
+              
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-2"><span class="icon-question_answer text-primary mr-2"></span>How does Affiliate marketing work?</h3>
+                <p>After you register as an Alvida's Affiliate, you will be given instant access to your affiliate promoter’s dashboard. You’ll be given a unique referral link to promote. </p>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-2"><span class="icon-question_answer text-primary mr-2"></span>How long does it take to get started?</h3>
+                <p>Immediately. Unlike most other Affiliate programs that can days or weeks, it only takes a few minutes to register as an Alvida's Affiliate. just avail our certain packages.</p>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>How much can I make? Is there a limit to the commissions I can receive?</h3>
+                <p>No limits! The more people you refer who purchase products, the more you can earn. </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>I’m not interested in Affiliate marketing. What should I do?</h3>
+                <p>We’d love for you to promote Alvida's products by:</p>
+                <ul>  
+                  <li>
+                  Inviting your friends to purchase any Alvida's product or do a Reboot with you.
+                  </li>
+                  <li>
+                 Sharing links to your favorite courses on your website or via social media.
+                  </li>
+                  <li>
+                   Following our blog and Facebook pages and sharing posts and updates, with your community of followers. </li>
+                  
+                  </ul>
+              
+              </div>
+
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+
+
+    <div class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
+            <div class="block-heading-1">
+              <span>Get In Touch</span>
+              <h2>Contact Us</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="100">
+            <form action="#" method="post">
+              <div class="form-group row">
+                <div class="col-md-6 mb-4 mb-lg-0">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Email address">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6 mr-auto">
+                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-white p-3 p-md-5">
+              <h3 class="text-black mb-4">Contact Info</h3>
+              <ul class="list-unstyled footer-link">
+                <li class="d-block mb-3">
+                  <span class="d-block text-black">Address:</span>
+                  <span>Cebu City, Philippines</span></li>
+                <li class="d-block mb-3"><span class="d-block text-black">Phone:</span><span>(+63) 932 9198 926</span></li>
+                <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>alvidasmarketing@gmail.com</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-7">
+                <h2 class="footer-heading mb-4">About Us</h2>
+                <p>Our own flagship package and a unique marketing system is the only one of a kind, helping you turn your passion by giving you all the skills in MLM. By helping you build your network and creating your unique selling proposition to maximize your chance of success.s</p>
+              </div>
+              <div class="col-md-4 ml-auto">
+                <h2 class="footer-heading mb-4">Features</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li> 
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4 ml-auto">
+
+            <div class="mb-5">
+              <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
+              <form action="#" method="post" class="footer-suscribe-form">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+                </div>
+            </div>
+
+
+            <h2 class="footer-heading mb-4">Follow Us</h2>
+            <a href="#" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+            <a href="#" class="pl-3 pr-3"><span class="icon-message"></span></a>
+            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p class="copyright"> 
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Alvida's Marketing Corp.  
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    </div> 
+    <script src="<?php echo base_url('assets/newassets/js/jquery-3.3.1.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/newassets/js/popper.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/newassets/js/bootstrap.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/newassets/js/owl.carousel.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/newassets/js/jquery.sticky.js')?>"></script>
+    <script src="<?php echo base_url('assets/newassets/js/jquery.waypoints.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/newassets/js/jquery.animateNumber.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/newassets/js/jquery.fancybox.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/newassets/js/jquery.easing.1.3.js')?>"></script>
+    <script src="<?php echo base_url('assets/newassets/js/aos.js')?>"></script>
+    <script src="<?php echo base_url('assets/newassets/js/main.js')?>"></script>
+ 
+ 
+
+
+  </body>
+
+</html>

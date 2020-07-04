@@ -5,36 +5,13 @@
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="<?php echo base_url() ?>images/logo.jpg">
+            <img class="android-logo-image" src="<?php echo base_url() ?>images/smx_logo.jpg">
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-            <?php if ($IsUserAccountVerified == true): ?>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<?php echo base_url() ?>Users/Dashboard/<?php echo @$_SESSION['AccountName'] ?>">Dashboard</a>
-              <?php if ($newmembertobeassigncnt > 0): ?>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase mdl-badge mdl-badge--overlap" data-badge="<?php echo $newmembertobeassigncnt ?>" href="<?php echo base_url() ?>Binary/Network/<?php echo @$_SESSION['AccountName'] ?>">Binary</a>
-              <?php else: ?>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<?php echo base_url() ?>Binary/Network/<?php echo @$_SESSION['AccountName'] ?>">Binary</a>
-              <?php endif ?>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#!">Order</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#!">Gift</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#!">Voucher</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#!">Products</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#!">Code</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase payout-button" href="#!">Encashment</a>
-            <?php else: ?>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase btnAddAccount" href="#!">Dashboard</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase btnAddAccount" href="#!">Binary</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase btnAddAccount" href="#!">Order</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase btnAddAccount" href="#!">Gift</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase btnAddAccount" href="#!">Voucher</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase btnAddAccount" href="#!">Products</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase btnAddAccount" href="#!">Code</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase btnAddAccount" href="#!">Encashment</a>
-            <?php endif ?>
               <?php if ($Account['ReferredById'] == null && $Accounts != false): ?>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#!">
               <button id="btnSetReferral" class="btnSetReferral mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="margin-left: 10px;margin-right: 5px;">
@@ -48,7 +25,7 @@
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="<?php echo base_url() ?>images/logo.jpg">
+            <img class="android-logo-image" src="<?php echo base_url() ?>images/smx_logo.jpg">
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
@@ -59,7 +36,7 @@
                <li class="mdl-menu__item"><a href="<?php echo base_url() ?>Users/SwitchAccount/<?php echo @$account['AccountName'] ?>" style="color: #000; text-decoration: none;"><?php echo @$account['AccountName'] ?></a></li>
               <?php endforeach ?>
             <?php endif ?>
-            <?php if ($AccountsCount <= 15): ?>
+            <?php if ($AccountsCount <= 1): ?>
               <li class="mdl-menu__item"><a href="#!" style="color: #000; text-decoration: none;" class="btnAddAccount">Add Account</a></li>
             <?php endif ?>
             <li class="mdl-menu__item">
@@ -71,28 +48,22 @@
 
       <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-          <img class="android-logo-image" src="<?php echo base_url() ?>images/logo.jpg">
+          <img class="android-logo-image" src="<?php echo base_url() ?>images/smx_logo.jpg">
         </span>
         <nav class="mdl-navigation">
           <span class="mdl-navigation__link" href="">Menu</span>
           <?php if ($IsUserAccountVerified == true): ?>
           <a class="mdl-navigation__link" href="<?php echo base_url() ?>Users/Dashboard/<?php echo @$_SESSION['AccountName'] ?>">Dashboard</a>
           <a class="mdl-navigation__link" href="<?php echo base_url() ?>Binary/Network/<?php echo @$_SESSION['AccountName'] ?>">Binary</a>
-          <a class="mdl-navigation__link" href="#!">Order</a>
-          <a class="mdl-navigation__link" href="#!">Gift Certificate</a>
+          <a class="mdl-navigation__link payout-button" href="#!">Encashment</a>
           <a class="mdl-navigation__link" href="#!">Voucher</a>
-          <a class="mdl-navigation__link" href="#!">Products</a>
-          <a class="mdl-navigation__link" href="#!">Code Vault</a>
-          <a class="mdl-navigation__link payout-button" href="#!">Request Payout</a>
+          <!-- <a class="mdl-navigation__link" href="#!">Incentives</a> -->
           <?php else: ?>
           <a class="mdl-navigation__link btnAddAccount" href="#!">Dashboard</a>
           <a class="mdl-navigation__link btnAddAccount" href="#!">Binary</a>
-          <a class="mdl-navigation__link btnAddAccount" href="#!">Order</a>
-          <a class="mdl-navigation__link btnAddAccount" href="#!">Gift Certificate</a>
+          <a class="mdl-navigation__link btnAddAccount" href="#!">Encashment</a>
           <a class="mdl-navigation__link btnAddAccount" href="#!">Voucher</a>
-          <a class="mdl-navigation__link btnAddAccount" href="#!">Products</a>
-          <a class="mdl-navigation__link btnAddAccount" href="#!">Code Vault</a>
-          <a class="mdl-navigation__link btnAddAccount" href="#!">Request Payout</a>
+         <!--  <a class="mdl-navigation__link btnAddAccount" href="#!">Incentives</a>   -->
           <?php endif ?>
           <?php if ($Account['ReferredById'] == null && $Accounts != false): ?>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#!">
@@ -108,7 +79,7 @@
               <a class="mdl-navigation__link" href="<?php echo base_url() ?>Users/SwitchAccount/<?php echo @$account['AccountName'] ?>"><?php echo @$account['AccountName'] ?></a>
               <?php endforeach ?>
             <?php endif ?>
-            <?php if ($AccountsCount <= 8): ?>
+            <?php if ($AccountsCount <= 1): ?>
               <a class="mdl-navigation__link btnAddAccount" href="#!" style="color: #000; text-decoration: none;">Add Account</a>
             <?php endif ?>
             <a class="mdl-navigation__link" style="color: #000; text-decoration: none;" href="#!"  onclick="signOut();">Sign out</a>

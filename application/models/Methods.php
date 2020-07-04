@@ -621,38 +621,38 @@ Class Methods extends Generic{
             $this->logs->insert($field);
         }
 
-        public function addCashBackReward($accountname){
-            //get the account for the package
-            $account = $this->acc->get(['AccountName' => $accountname]);
-            $accountcode = $this->code->get($account[0]['CodeId']);
-            $accountpackage = $this->package->get($accountcode[0]['PackageId']);
+        // public function addCashBackReward($accountname){
+        //     //get the account for the package
+        //     $account = $this->acc->get(['AccountName' => $accountname]);
+        //     $accountcode = $this->code->get($account[0]['CodeId']);
+        //     $accountpackage = $this->package->get($accountcode[0]['PackageId']);
 
-            //get the earned
-            $earn = $accountpackage[0]['CashBackReward'];
+        //     //get the earned
+        //     $earn = $accountpackage[0]['CashBackReward'];
 
-            //member
-            $fieldinMember = [
-                'AccountName' => $accountname,
-                'Debit' => 0,
-                'Credit' => $earn,
-                'Tag' => 'Cash Back Reward',
-                'Description' => 'Cash Back Reward from '.$accountname.' on '.date('Y-m-d H:i:s'),
-                'DateCreated' => date('Y-m-d H:i:s')
-            ];
+        //     //member
+        //     $fieldinMember = [
+        //         'AccountName' => $accountname,
+        //         'Debit' => 0,
+        //         'Credit' => $earn,
+        //         'Tag' => 'Cash Back Reward',
+        //         'Description' => 'Cash Back Reward from '.$accountname.' on '.date('Y-m-d H:i:s'),
+        //         'DateCreated' => date('Y-m-d H:i:s')
+        //     ];
 
-            $this->earnings->insert($fieldinMember);
+        //     $this->earnings->insert($fieldinMember);
 
-            //company
-            $fieldinCompany = [
-                'AccountName' => $accountname,
-                'Debit' => $earn,
-                'Credit' => 0,
-                'Tag' => 'Cash Back Reward',
-                'Description' => 'Cash Back Reward from '.$accountname.' on '.date('Y-m-d H:i:s'),
-                'DateCreated' => date('Y-m-d H:i:s')
-            ];
-            $this->ledger->insert($fieldinCompany);
+        //     //company
+        //     $fieldinCompany = [
+        //         'AccountName' => $accountname,
+        //         'Debit' => $earn,
+        //         'Credit' => 0,
+        //         'Tag' => 'Cash Back Reward',
+        //         'Description' => 'Cash Back Reward from '.$accountname.' on '.date('Y-m-d H:i:s'),
+        //         'DateCreated' => date('Y-m-d H:i:s')
+        //     ];
+        //     $this->ledger->insert($fieldinCompany);
 
-            $this->method->logs('Cash Back Reward from '.$accountname.' on '.date('Y-m-d H:i:s'));
-        }
+        //     $this->method->logs('Cash Back Reward from '.$accountname.' on '.date('Y-m-d H:i:s'));
+        // }
 }

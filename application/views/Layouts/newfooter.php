@@ -1,4 +1,16 @@
 
+
+ <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p class="copyright"> 
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Systemax Marketing Corp.  
+            </p>
+            </div>
+          </div>
+
+        </div>
+        
 <!-- Toast -->
 <div id="showMessage" class="mdl-js-snackbar mdl-snackbar">
   <div class="mdl-snackbar__text"></div>

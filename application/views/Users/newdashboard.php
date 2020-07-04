@@ -34,10 +34,10 @@
                     <span class="text-m"><?php echo $Account['TotalMVP'] ?></span><br>
                     <span class="text-s">Multilevel Points</span>
                 </div>
-                <div class="mdl-cell mdl-cell--3-col text-center pt10 pb10 mdl-cell--12-col-phone">
+               <!--  <div class="mdl-cell mdl-cell--3-col text-center pt10 pb10 mdl-cell--12-col-phone">
                     <span class="text-m"><?php echo $IncentivePoints ?></span><br>
                     <span class="text-s">Incentive Points</span>
-                </div>
+                </div> -->
                 <div class="mdl-cell mdl-cell--3-col text-center pt10 pb10 mdl-cell--12-col-phone">
                     <span class="text-m"><?php echo $DaysLeft ?></span><br>
                     <span class="text-s">Days Left</span>
@@ -131,7 +131,7 @@
                     </script>
                   </div>
                   
-                  <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-typography--text-center" style="color: #3F51B5;">
+                  <!-- <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-typography--text-center" style="color: #3F51B5;">
                     <i class="material-icons" style="font-size: 3.2em;">
                     call_split
                     </i><br><br>
@@ -144,7 +144,7 @@
                         this.MaterialProgress.setProgress(<?php echo @(100-((float)$WaitingPoints/(float)$Account['TotalMVP'])*100) ?>);
                     });
                     </script>
-          		</div>
+          		</div> -->
             </div>
         </div>
 
@@ -189,7 +189,7 @@
             </div>
         </div>
 
-        <?php if ($LatestPayoutRequest != false): ?>
+       <!--  <?php if ($LatestPayoutRequest != false): ?>
             <div class="android-screen-section v2 mdl-typography--text-center" style="background-color: #f7f7f7 !important">
               <div class="android-wear-band-text mdl-grid">
                 <h3 class="blue-text lighten-1 header">Your Latest Request for Encashment</h1>
@@ -268,7 +268,7 @@
               </div>
           </div>
         <?php endif ?>
-        
+         -->
         <footer class="android-footer mdl-mega-footer">
           
 
